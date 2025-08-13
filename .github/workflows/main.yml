@@ -19,9 +19,8 @@ jobs:
         run: echo Hello World!
 
       - name: run a multi-line script
-        run: 
-        echo add other actions
-        echo add another action
+        run: |
+          echo add other actions
 
         
         
