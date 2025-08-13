@@ -10,7 +10,7 @@ jobs:
     container: gradle:6-jdk11
     steps:
       - name: Clone down repository
-        uses: actions/checkout@v5     
+        uses: actions/checkout@v4    
       - name: Build application
         run: ci/build-app.sh
       - name: Test
@@ -43,7 +43,7 @@ jobs:
       packages: write
     steps:
     - name: Download code
-      uses: actions/download-artifact@v5
+      uses: actions/download-artifact@v4
       with:
         name: code
         path: .
