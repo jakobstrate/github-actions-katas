@@ -8,6 +8,12 @@ jobs:
       - name: Clone down repository
         uses: actions/checkout@v4       
       - run: ci/build-app.sh
+      - name: Upload repo
+        uses: actions/upload-artifact@v4
+        with: 
+          name: code
+          path: .
+          include-hidden-files: true
 
         
         
